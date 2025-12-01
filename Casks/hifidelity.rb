@@ -17,6 +17,12 @@ cask "hifidelity" do
 
   app "HiFidelity.app"
 
+  postflight do
+    # Remove quarantine attribute before moving the app
+    system_command "/usr/bin/xattr",
+      args: ["-cr", "#{staged_path}/HiFidelity.app"]
+  end
+  
   caveats do
     unsigned_accessibility
   end
