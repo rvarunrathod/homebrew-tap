@@ -1,6 +1,6 @@
 cask "hifidelity" do
-  version "1.0.7"
-  sha256 "4401552d9b0d80aa8b998b074e4e367c6eb59c47b2ccb7c043c36ebca0a56378"
+  version "1.0.8"
+  sha256 "b9c51528b55f76cb6752af436e91524755b5c2e025dbd4a4b838d8fa6593bd70"
 
   url "https://github.com/rvarunrathod/HiFidelity/releases/download/v#{version}/HiFidelity-#{version}-Universal.dmg"
   name "HiFidelity"
